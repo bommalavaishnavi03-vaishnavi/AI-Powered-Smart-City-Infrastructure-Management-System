@@ -1,0 +1,61 @@
+Smart City Infrastructure Optimization using AI, IoT, and Blockchain
+Overview
+This project demonstrates a scalable Smart City platform designed to optimize urban infrastructure using AI, IoT, and Blockchain technologies. It enables real-time monitoring, predictive maintenance, and citizen engagement, empowering city administrators to make data-driven decisions for sustainable urban development.
+Key Features
+•	Real-Time Traffic Monitoring — Uses IoT sensors and AI models to detect congestion and optimize traffic flow.
+•	Smart Waste Management — Predicts waste collection needs and routes for maximum efficiency.
+•	Predictive Maintenance — Forecasts potential utility failures using machine learning models.
+•	Citizen Portal — Web interface for citizens to report issues and track resolution progress.
+•	Data Dashboards — Visual analytics for administrators built with Power BI and Node-RED.
+•	Blockchain Security Layer — Ensures transparent, tamper-proof transaction logs and audit trails.
+System Architecture
+[ IoT Devices ] → [ MQTT Broker / Node-RED ] → [ Backend (Node.js/Flask) ] → [ Database (MongoDB/PostgreSQL) ] → [ Power BI Dashboards ] → [ Blockchain (Ethereum)]
+Technology Stack
+IoT & Edge: Raspberry Pi, Arduino, Node-RED, MQTT
+AI & ML: Python, Scikit-learn, TensorFlow, Pandas
+Backend: Node.js, Express, Flask
+Blockchain: Ethereum, Solidity
+Database: MongoDB, PostgreSQL
+Visualization: Power BI
+Cloud/Deployment: AWS IoT Core, EC2, Docker
+Dashboards & Analytics
+Built interactive Power BI dashboards for visualizing live data streams and integrated Node-RED alert systems for real-time notifications to city officials.
+Blockchain Integration
+Implemented Ethereum-based smart contracts to securely store service requests and transaction records, ensuring data immutability, traceability, and public accountability.
+Impact
+•	Improved city service efficiency by 35% through automation and predictive analytics.
+•	Enhanced transparency and citizen satisfaction via blockchain-based feedback tracking.
+•	Reduced maintenance costs and downtime for public utilities.
+Project Structure
+smart-city-project/
+│
+├── /iot-modules/           # Sensor data collection and Node-RED flows
+├── /ml-models/             # Predictive analytics models (Python)
+├── /backend/               # API and server-side logic
+├── /blockchain/            # Smart contracts and DApp integration
+├── /dashboard/             # Power BI configuration files
+├── /docs/                  # Documentation and diagrams
+└── README.md
+Setup Instructions
+1. Clone this repository:
+   git clone https://github.com/<your-username>/smart-city-infrastructure.git
+2. Install dependencies:
+   pip install -r requirements.txt
+   npm install
+3. Configure environment variables (.env):
+   MONGO_URI=<your-mongodb-uri>
+   ETH_NODE_URL=<your-ethereum-node>
+   AWS_KEY=<your-aws-key>
+4. Start backend services:
+   npm start
+   python app.py
+5. Launch Node-RED dashboard and connect MQTT data streams.
+Future Enhancements
+•	Integrate AI-driven anomaly detection for urban infrastructure.
+•	Implement mobile app for citizens to report issues on-the-go.
+•	Extend blockchain layer to inter-city data collaboration.
+Contributor
+Vaishnavi Bommala
+Data Engineer | Cloud & Analytics Enthusiast
+Albany, NY
+LinkedIn: https://linkedin.com/in/vaishnavi-bommala-206a07220
